@@ -1,0 +1,45 @@
+
+<ion-view title="Time-Varying Textures" id="time-vary" class=" " ng-controller="timeVaryCtrl as vm" ng-init="setTexture(1)">
+  <ion-content padding="true" class="has-header">
+    <!--
+    <div id="timeVary-button-bar1" class=" button-bar ">
+      <button id="timeVary-button1" class=" button button-positive  button-block ">Weather Effect</button>
+      <button id="timeVary-button3" class=" button button-positive  button-block ">Age Heat-Map</button>
+    </div>
+  -->
+
+    <div style="background: url({{images[0].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[0].opacity}};">
+      <div style="background: url({{images[1].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[1].opacity}};">
+        <div style="background: url({{images[2].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[2].opacity}};">
+          <div style="background: url({{images[3].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[3].opacity}};">
+            <div style="background: url({{images[4].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[4].opacity}};">
+              <div style="background: url({{images[5].src}}) no-repeat; background-position: center top; text-align: center; opacity: {{images[5].opacity}};">
+                <img ng-src="{{images[6].src}}" style="opacity: {{images[6].opacity}};" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <center>
+          <label for="timeSlider">&Delta;t = {{time}}</label>
+        </center>
+
+        <ion-item class="item-borderless range range-positive">
+          <input type="range" id="timeSlider" value="0" min="-1" max="1" step="0.01" ng-model="vm.timeSlider">
+        </ion-item>
+
+      <!--  <ion-label><i>An interactive demo of research by Rachele Bellini, Yanir Kleiman, and Daniel Cohen-Or at Tel Aviv University.  <a href="<a href="http://www.cs.tau.ac.il/~dcor/articles/2016/TW.pdf">View the paper</a></i>
+-->
+    <!--<i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>-->
+
+  </ion-content>
+  <ion-footer-bar class="bar-royal">
+    <button class="button button-icon ion-camera" ng-click="modal.show()">
+    </button>
+    <button class="button button-icon ion-ios-download" ng-click="saveFile()">
+    </button>
+  </ion-footer-bar>
+</ion-view>
