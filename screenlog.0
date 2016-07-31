@@ -10,4 +10,5 @@
   serverlogs[32m or [39ms[32m to enable/disable server log output[39m
   quit[32m or [39mq[32m to shutdown the server and exit[39m
 
-ionic $ 
+ionic $ Cannot exec 'cd /Volumes/Tremulous-20060704; ionic serve --nolivereload --nobrowser': No such file or directory
+Cannot exec 'cd /Users/home/Developer/SIGGRAPH/2016/Time-Vary; ionic serve --nolivereload --nobrowser': No such file or directory
