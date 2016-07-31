@@ -18,7 +18,7 @@ angular.module('app.controllers', [])
     $scope.time = dt.toFixed(2);
     var x = (dt + 1.0) / 2.0;
     var b = Math.floor(n*x) + 1;
-    for (var i = 0; i < n; i++) {
+    for (var i = 0; i < $scope.images.length; i++) {
       if (i < b) {
         $scope.images[i].opacity = 1;
       } else if (i == b) {
