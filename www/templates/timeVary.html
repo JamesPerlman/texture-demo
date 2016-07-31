@@ -11,16 +11,8 @@
 
 
         <center>
-          <label for="timeSlider">&Delta;t = {{time}}</label>
-        </center>
-
-        <ion-item class="item-borderless range range-positive">
-          <input type="range" id="timeSlider" value="0" min="-1" max="1" step="0.01" ng-model="vm.timeSlider">
-        </ion-item>
-
-        <center>
-            <div style="position: relative; display: block; align: center">
-              <img ng-src="{{images[0].src}}" class="fadeLayer" style="opacity: {{images[0].opacity}};" />
+            <div style="position: relative;align: center;">
+              <img ng-src="{{images[0].src}}" style="opacity: {{images[0].opacity}};" />
               <img ng-src="{{images[1].src}}" class="fadeLayer" style="opacity: {{images[1].opacity}};" />
               <img ng-src="{{images[2].src}}" class="fadeLayer" style="opacity: {{images[2].opacity}};" />
               <img ng-src="{{images[3].src}}" class="fadeLayer" style="opacity: {{images[3].opacity}};" />
@@ -29,6 +21,15 @@
               <img ng-src="{{images[6].src}}" class="fadeLayer" style="opacity: {{images[6].opacity}};" />
             </div>
           </center>
+
+                  <center style="bottom: 4px;">
+                    <label for="timeSlider">&Delta;t = {{time}}</label>
+                  </center>
+
+                  <ion-item class="item-borderless range range-positive" style="bottom: 0px;">
+                    <input type="range" id="timeSlider" value="0" min="-1" max="1" step="0.01" ng-model="vm.timeSlider">
+                  </ion-item>
+
       <!--  <ion-label><i>An interactive demo of research by Rachele Bellini, Yanir Kleiman, and Daniel Cohen-Or at Tel Aviv University.  <a href="<a href="http://www.cs.tau.ac.il/~dcor/articles/2016/TW.pdf">View the paper</a></i>
 -->
     <!--<i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>-->
